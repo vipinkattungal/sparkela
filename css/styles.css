@@ -4556,9 +4556,11 @@ ul li:last-child {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color:rgb(255, 255, 0);
     font-size: 18px;
     transition: color 0.3s ease;
+    text-transform: uppercase;
+    
 }
 
 a:hover {
@@ -4628,7 +4630,7 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(221, 182, 238, 0.7);
+    background: rgba(37, 22, 43, 0.7);
     border-radius: 50px;
     display: flex;
     justify-content: center; /* Center horizontally */
@@ -4648,15 +4650,18 @@ a:hover {
 }
 
 .backside ul li {
-    margin: 5px 0; /* Adjust margin between list items */
-    font-size: 0.9em; /* Set font size */
+    /* margin: 5px 0; Adjust margin between list items */
+    font-size: 0.7em; /* Set font size */
     white-space: nowrap; /* Prevent text from wrapping */
     overflow: hidden; /* Hide any overflowing text */
     text-overflow: ellipsis; /* Add ellipsis for text overflow */
 }
+.backside ul {
+    text-transform: uppercase;
+}
 @media screen and (max-width: 768px) {
     .backside ul li {
-        font-size: 0.4em; /* Adjust font size for mobile devices */
+        font-size: 0.5em; /* Adjust font size for mobile devices */
     }
 }
   .arrow {
@@ -4937,8 +4942,20 @@ a:hover {
     max-width: 80px; /* Decrease max-width for smaller screens */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px;
+    cursor: pointer;
+
+}
+.qr-code1:hover {
+    animation: vibrate 0.3s ease infinite; /* Apply the vibrate animation on hover */
 }
 
+@keyframes vibrate {
+    0% { transform: translateX(0); } /* Initial position */
+    25% { transform: translateX(-2px); } /* Move left */
+    50% { transform: translateX(2px); } /* Move right */
+    75% { transform: translateX(-2px); } /* Move left */
+    100% { transform: translateX(0); } /* Return to initial position */
+}
 /* Media query for smaller screens (e.g., mobile devices) */
 @media screen and (max-width: 768px) {
     .logocontact1 {
@@ -5458,4 +5475,8 @@ textarea {
         opacity: 0;
         transform: rotate(45deg) translate(20px, 20px);
     }
+}
+.fproduction {
+    color: rgb(222, 254, 14); /* Change color to your desired color */
+    font-weight: bold;
 }

@@ -75,13 +75,13 @@
                   <div class="menu-bar"></div>
                   <ul>
                     <!-- <li><a id="home"href="#home">Home</a></li> -->
-                    <li><a id="about" href="#about">About Us</a></li>
-                    <li><a id="services" href="#services">Our Services</a></li>
-                    <li><a id="team" href="#team">Our Team</a></li>
-                    <li><a id="contactus" href="#contactus">Contact</a></li>
-                    <li><a id="Enquirey" href="#Enquirey">Queries</a></li>
+                    <li><a id="about" href="#about"><i>About Us</i></a></li>
+                    <li><a id="services" href="#services"><i>Our Services</i></a></li>
+                    <li><a id="team" href="#team"><i>Our Team</i></a></li>
+                    <li><a id="contactus" href="#contactus"><i>Contact</i></a></li>
+                    <li><a id="Enquirey" href="#Enquirey"><i>Queries</i></a></li>
 
-                    <li><a id="Blog" target="_blank" href="./blogger/index.html">Blog</a></li>
+                    <li><a id="Blog" target="_blank" href="./blogger/index.html"><i>Blog</i></a></li>
                   </ul>
                 </div>
               </div>
@@ -149,10 +149,10 @@
                           <div class="arrow left-arrow">&lt;</div>
 
                           <div class="panel active"
-                            style="background-image: url('./images/flm.PNG')">
+                            style="background-image: url('./images/filim.PNG')">
 
                             <div class="frontside">
-                              <h3>FILM PRODUCTION
+                              <h3 class="fproduction">FILM PRODUCTION
                               </h3>
                             </div>
                             <div class="backside">
@@ -171,7 +171,7 @@
                           <div class="panel"
                             style="background-image: url('./images/creativecc.PNG')">
                             <div class="frontside">
-                              <h3>CREATIVE CONTENT
+                              <h3 class="fproduction">CREATIVE CONTENT
                               </h3>
                             </div>
                             <div class="backside">
@@ -185,16 +185,14 @@
                                 <li>LOCATION SCOUTING</li>
                                 <li>SET DESIGN/ CONSTRUCTION
                                 </li>
-                                <li>PRODUCTION MANAGEMENT
-
-                                </li>
+                               
                               </ul>
                             </div>
                           </div>
                           <div class="panel"
                             style="background-image: url('./images/creativeProduction.PNG')">
                             <div class="frontside">
-                              <h3>CREATIVE PRODUCTION
+                              <h3 class="fproduction">CREATIVE PRODUCTION
                               </h3>
                             </div>
                             <div class="backside">
@@ -209,22 +207,14 @@
                                 <li>ANIMATION</li>
                                 <li>VIDEOGRAPHY
                                 </li>
-                                <!-- <li>PHOTOGRAPHY
-
-                                                        </li>
-                                                        <li>GRAPHIC DESIGN
-                                                        </li>
-                                                        <li>VR/AR DEVELOPMENT
-
-
-                                                      </li> -->
+                               
                               </ul>
                             </div>
                           </div>
                           <div class="panel"
                             style="background-image: url('./images/eventMangement.PNG')">
                             <div class="frontside">
-                              <h3>EVENTS
+                              <h3 class="fproduction">EVENTS
                               </h3>
                             </div>
                             <div class="backside">
@@ -240,7 +230,7 @@
                           <div class="panel"
                             style="background-image: url('./images/software.PNG')">
                             <div class="frontside">
-                              <h3>SOFTWARE DEVELOPMENT
+                              <h3 class="fproduction">SOFTWARE DEVELOPMENT
                               </h3>
                             </div>
                             <div class="backside">
@@ -257,7 +247,7 @@
                           <div class="panel"
                             style="background-image: url('./images/mediaManagement.PNG')">
                             <div class="frontside">
-                              <h3>MEDIA MANAGEMENT </h3>
+                              <h3 class="fproduction">MEDIA MANAGEMENT </h3>
                             </div>
                             <div class="backside">
                               <ul>
@@ -273,7 +263,7 @@
                           <div class="panel"
                             style="background-image: url('./images/socialSupport.PNG')">
                             <div class="frontside">
-                              <h3>Support Services</h3>
+                              <h3 class="fproduction">SUPPORT SERVICES</h3>
                             </div>
                             <div class="backside">
                               <ul>
@@ -290,19 +280,18 @@
                           <div class="panel"
                             style="background-image: url('./images/mediaProduction.PNG')">
                             <div class="frontside">
-                              <h3>Media Production</h3>
+                              <h3 class="fproduction">MEDIA PRODUCTION</h3>
                             </div>
                             <div class="backside">
                               <ul>
                                 <li>Film Production</li>
                                 <li>Music Videos</li>
                                 <li>Ad Films</li>
-                                <li>Corporate Ads</li>
                                 <li>Feature Films</li>
                                 <li>Branding</li>
                                 <li>Videography
                                 </li>
-                                <li>Animation</li>
+                        
                                 <li>VR/AR Development</li>
                 
 
@@ -604,6 +593,12 @@
                                   </div>
                                 </div>
                               </div>
+                              <div class="box">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                </div>
+                            
                               <!-- Repeat this block for each card -->
                               <div class="image-card">
                                 <div class="card-content">
@@ -1056,7 +1051,7 @@
                             Everywhere!</h1>
                           <div class="footer-columns">
                             <div class="column">
-                              <img src="./images/Untitled11.png" alt="QR Code" class="qr-code1">
+                              <img src="./images/Untitled11.png" alt="QR Code"  class="qr-code1" onclick="openGoogleMap()">
 
                             </div>
                             <div class="column">
@@ -1140,6 +1135,13 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script>
+      function openGoogleMap() {
+        var googleMapsUrl = "https://maps.app.goo.gl/pdyakTKJqCUnJXeu7";
+    
+    // Open the Google Maps URL in a new tab/window
+    window.open(googleMapsUrl);
+}
+
  function sendEmail() {
         var formData = new FormData(document.getElementById('myForm'));
 
@@ -1253,13 +1255,14 @@ menuItems.forEach(function(item) {
         closeMenu();
     });
 });
+var isMobile = window.innerWidth <= 768;
 var scrollPositions = {
     "home": 0,
     "about": 0,
-    "services": document.body.scrollHeight * 0.85,
-    "contactus":document.body.scrollHeight * 0.98,
-    "Enquirey":document.body.scrollHeight * 0.98,
-    "team": document.body.scrollHeight * 0.95
+    "services":isMobile ? document.body.scrollHeight * 0.88:document.body.scrollHeight * 0.86,
+    "contactus":isMobile ? document.body.scrollHeight * 0.96:document.body.scrollHeight * 0.99,
+    "Enquirey":document.body.scrollHeight * 0.99,
+    "team": isMobile ? document.body.scrollHeight * 0.94 : document.body.scrollHeight * 0.98
  // Example scroll position for "contact" section
 };
 var menuItems = document.querySelectorAll('#menu ul li a');
