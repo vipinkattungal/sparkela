@@ -1888,6 +1888,16 @@ img,
 .no-js #preloader {
     display: none;
 }
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+
 
 #loader {
     position: relative;
@@ -4936,19 +4946,43 @@ a:hover {
     border-radius: 10px;
 }
 
-.qr-code1 {
-    margin-left: 0; /* Remove left margin in mobile view */
-    margin-bottom: 10px; /* Reduce bottom margin for better spacing */
-    max-width: 80px; /* Decrease max-width for smaller screens */
-    height: auto; /* Maintain aspect ratio */
+/* CSS */
+.qr-code-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-code {
+    margin-bottom: 10px;
+    max-width: 80px;
+    height: auto;
     border-radius: 10px;
     cursor: pointer;
-
 }
+
+.location-info {
+    text-align: center;
+}
+
+.location-info span {
+    font-weight: bold;
+    color:rgb(16, 224, 16);
+}
+
+.location-info i {
+    margin-top: 5px;
+    font-size: 20px; /* Adjust size as needed */
+    color: rgb(213, 15, 15);
+}
+
 .qr-code1:hover {
     animation: vibrate 0.3s ease infinite; /* Apply the vibrate animation on hover */
 }
-
+.info-address{
+    font-weight: bold;
+    color:rgb(117, 122, 117);  
+}
 @keyframes vibrate {
     0% { transform: translateX(0); } /* Initial position */
     25% { transform: translateX(-2px); } /* Move left */
@@ -5480,3 +5514,34 @@ textarea {
     color: rgb(222, 254, 14); /* Change color to your desired color */
     font-weight: bold;
 }
+.svg {
+    display:block;
+    width:258px;
+    height:258px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+  }
+  
+  .tree {
+    fill: #E73E0D;
+  }
+  
+  .circle-mask {
+    transform-origin: 50% 90%;
+    animation: scales 10s infinite ease-out;
+  }
+  
+  @keyframes scales {
+    0%, 100% {
+      transform: scale(0.0);
+    }
+    7%, 90% {
+      transform: scale(0.4);
+    }
+    50% {
+      transform: scale(1.0);
+    }
+    
+  }
