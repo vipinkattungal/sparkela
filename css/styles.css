@@ -4976,13 +4976,10 @@ a:hover {
     color: rgb(213, 15, 15);
 }
 
-.qr-code1:hover {
+.qr-code:hover {
     animation: vibrate 0.3s ease infinite; /* Apply the vibrate animation on hover */
 }
-.info-address{
-    font-weight: bold;
-    color:rgb(117, 122, 117);  
-}
+
 @keyframes vibrate {
     0% { transform: translateX(0); } /* Initial position */
     25% { transform: translateX(-2px); } /* Move left */
