@@ -1273,7 +1273,7 @@ var scrollPositions = {
 "services":isMobile ? document.body.scrollHeight * 0.88:document.body.scrollHeight * 0.86,
 "contactus":isMobile ? document.body.scrollHeight * 0.96:document.body.scrollHeight * 0.99,
 "Enquirey":document.body.scrollHeight * 0.99,
-"team": isMobile ? document.body.scrollHeight * 0.94 : document.body.scrollHeight * 0.98
+"team": isMobile ? document.body.scrollHeight * 0.94 : document.body.scrollHeight * 0.975
 // Example scroll position for "contact" section
 };
 var menuItems = document.querySelectorAll('#menu ul li a');
@@ -1829,8 +1829,8 @@ if(scrollTop >=scrollThreshold7){
 var overlay3 = document.getElementById('overlay3');
 
 var overlay2 = document.getElementById('overlay2');
-overlay3.style.height = 200 + 'vh';
-overlay3.style.top = 50 +'%';
+overlay3.style.height = 250 + 'vh';
+// overlay3.style.top = 50 +'%';
 overlay3.style.height = 100 + '%';
 overlay3.style.width = 100 +'%';
 overlay3.style.transform = '0.5s height ease';
