@@ -1271,7 +1271,7 @@ var scrollPositions = {
 "home": 0,
 "about": 0,
 "services":isMobile ? document.body.scrollHeight * 0.88:document.body.scrollHeight * 0.86,
-"contactus":isMobile ? document.body.scrollHeight * 0.96:document.body.scrollHeight * 0.99,
+"contactus":isMobile ? document.body.scrollHeight * 0.99:document.body.scrollHeight * 0.99,
 "Enquirey":document.body.scrollHeight * 0.99,
 "team": isMobile ? document.body.scrollHeight * 0.94 : document.body.scrollHeight * 0.975
 // Example scroll position for "contact" section
@@ -1418,6 +1418,7 @@ window.open(this.href, '_blank');
         var scrollThreshold7 = document.body.scrollHeight * 0.7;
         var scrollThreshold8 = document.body.scrollHeight * 0.8;
         var scrollThreshold8s = document.body.scrollHeight * 0.85;
+        var scrollThreshold8sd = document.body.scrollHeight * 0.88;
 
         var scrollThreshold9 = document.body.scrollHeight * 0.9;
         var scrollThreshold9s = document.body.scrollHeight * 0.93;
@@ -1787,7 +1788,7 @@ overlay3.style.height = "-100vh";
 
 }
 
-if(scrollTop >=scrollThreshold9){
+if(scrollTop >=scrollThreshold8sd){
 
 const leftArrow = document.querySelector('.left-arrow');
 const rightArrow = document.querySelector('.right-arrow');
@@ -1798,7 +1799,7 @@ var copy = document.querySelector(".logos-slide").cloneNode(true);
   document.querySelector(".logos").appendChild(copy);
             var resetScrollPercent = (scrollTop - scrollThreshold8s) / (document.body.scrollHeight - window.innerHeight - scrollThreshold8s);
 
-         overlay2.style.clipPath =`circle(${resetScrollPercent *2*100 }% at 0% 0%)`;
+         overlay2.style.clipPath =`circle(${resetScrollPercent *4*100 }% at 0% 0%)`;
 var copy = document.querySelector(".logos-slide").cloneNode(true);
   document.querySelector(".logos").appendChild(copy);
   var dd = document.getElementById('overlay5');
@@ -1811,8 +1812,7 @@ var overlay = document.getElementById('overlay5');
   // Reset the clipPath to hide the circle when scrolling back
   overlay.style.clipPath = 'circle(0% at 50% 50%)';
 }
-if(scrollTop >=scrollThreshold9s){
-
+if(scrollTop >=scrollThreshold9sd){
 var overlay3 = document.getElementById('overlay3');
 overlay.style.height = '2500px';
 
@@ -1820,7 +1820,7 @@ overlay.style.height = '2500px';
 }
 if(scrollTop >=scrollThreshold9sv){
 var overlay3 = document.getElementById('overlay3');
-overlay3.style.height = '3200px';
+overlay3.style.height = '3400px';
 
 }
 
